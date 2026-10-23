@@ -20,11 +20,11 @@
 3. Fork先のアカウントを選択（通常は自分のアカウント）
 4. 「Create fork」をクリック
 
-![](/Image/preparation-and-setup/image.png)
+![](/Image/preparation-and-setup-with-lab3-4/image.png)
 
-![](/Image/preparation-and-setup/image-1.png)
+![](/Image/preparation-and-setup-with-lab3-4/image-1.png)
 
-##### 1-2. devブランチの作成
+##### 1-1-2. devブランチの作成
 
 Forkしたリポジトリのmainブランチから、新しくdevブランチを作成します。
 
@@ -34,15 +34,15 @@ Forkしたリポジトリのmainブランチから、新しくdevブランチを
 2. テキストボックスに「dev」と入力
 3. 「Create branch: dev from 'main'」をクリック
 
-![](/Image/preparation-and-setup/image-2.png)
+![](/Image/preparation-and-setup-with-lab3-4/image-2.png)
 
-![](/Image/preparation-and-setup/image-3.png)
+![](/Image/preparation-and-setup-with-lab3-4/image-3.png)
 
-##### 1-3. IBM Bobの起動
+##### 1-1-3. IBM Bobの起動
 
 デスクトップまたはアプリケーションフォルダから、IBM Bobを起動します。
 
-##### 1-4. GitHubリポジトリのクローン
+##### 1-1-4. GitHubリポジトリのクローン
 
 Forkしたリポジトリのdevブランチをローカルにクローンします。
 
@@ -70,14 +70,13 @@ Forkしたリポジトリのdevブランチをローカルにクローンしま�
 1. IBM Bob画面左上の「ファイル」メニューをクリック
 2. 「フォルダーを開く」を選択
 
-###### 1-5-2. フォルダーを選択
+###### 1-1-5-2. フォルダーを選択
 
 1. 先ほどクローンした「ibm-bob-basic-hands-on-rd2scm-v2」フォルダに移動
-2. フォルダをダブルクリックして中に入る
-3. 「Hands-on」フォルダを選択
-4. 「フォルダーの選択」をクリック
+2. 「ibm-bob-basic-hands-on-rd2scm-v2」フォルダを選択
+3. 「フォルダーの選択」をクリック
 
-##### 1-6. devブランチに切り替える
+##### 1-1-6. devブランチに切り替える
 
 1. IBM Bob画面左下に表示されている現在のブランチ名（「main」）をクリック
 2. 上部に表示されるブランチ一覧から「origin/dev」を選択
