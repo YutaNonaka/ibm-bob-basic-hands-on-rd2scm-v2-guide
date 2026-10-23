@@ -1,4 +1,4 @@
-# 準備と設定
+# 準備と設定（Lab 3・4 を実施する場合）
 
 チュートリアルに必要なリソースを準備し、IBM Bobの基本操作を理解します。
 
@@ -6,9 +6,9 @@
 
 ## 環境準備
 
-#### 1. チュートリアルデータの取得
+### 1. チュートリアルデータの取得
 
-##### 1-1. GitHubリポジトリのFork
+#### 1-1. GitHubリポジトリのFork
 
 既存のリポジトリを自分のGitHubアカウントにForkします。
 
@@ -24,7 +24,7 @@
 
 ![](/Image/preparation-and-setup-with-lab3-4/image-1.png)
 
-##### 1-1-2. devブランチの作成
+#### 1-2. devブランチの作成
 
 Forkしたリポジトリのmainブランチから、新しくdevブランチを作成します。
 
@@ -38,11 +38,11 @@ Forkしたリポジトリのmainブランチから、新しくdevブランチを
 
 ![](/Image/preparation-and-setup-with-lab3-4/image-3.png)
 
-##### 1-1-3. IBM Bobの起動
+#### 1-3. IBM Bobの起動
 
 デスクトップまたはアプリケーションフォルダから、IBM Bobを起動します。
 
-##### 1-1-4. GitHubリポジトリのクローン
+#### 1-4. GitHubリポジトリのクローン
 
 Forkしたリポジトリのdevブランチをローカルにクローンします。
 
@@ -53,30 +53,30 @@ Forkしたリポジトリのdevブランチをローカルにクローンしま�
    - Mac: `Cmd+Shift+P`
 2. 「Git: Clone」と入力して選択する
 3. 自分のGitHubに戻り、「<>Code」ボタンから、Forkしたリポジトリ（自分のアカウント）のHTTPSのURLを取得する
-3. Bobに戻り、Forkしたリポジトリ（自分のアカウント）のURLを入力する
+4. Bobに戻り、Forkしたリポジトリ（自分のアカウント）のURLを入力する
    - 例: `https://github.com/[あなたのユーザー名]/ibm-bob-basic-hands-on-rd2scm-v2.git`
-4. クローン先のディレクトリを選択する
-5. クローンが完了すると、「リポジトリを開きますか？」と聞かれるので「開く」をクリックする
+5. クローン先のディレクトリを選択する
+6. クローンが完了すると、「リポジトリを開きますか？」と聞かれるので「開く」をクリックする
 
 ![](/Image/preparation-and-setup/Slide8.jpg)
 ![](/Image/preparation-and-setup/Slide10.jpg)
 
 
-##### 1-5. プロジェクトフォルダの別の開き方（1-1-4 手順5でフォルダを開けた方は1-6.へ進んでください)
+#### 1-5. プロジェクトフォルダの別の開き方（1-4 手順6でフォルダを開けた方は1-6.へ進んでください)
 
 
-###### 1-5-1. フォルダーを開く
+##### 1-5-1. フォルダーを開く
 
 1. IBM Bob画面左上の「ファイル」メニューをクリック
 2. 「フォルダーを開く」を選択
 
-###### 1-1-5-2. フォルダーを選択
+##### 1-5-2. フォルダーを選択
 
 1. 先ほどクローンした「ibm-bob-basic-hands-on-rd2scm-v2」フォルダに移動
 2. 「ibm-bob-basic-hands-on-rd2scm-v2」フォルダを選択
 3. 「フォルダーの選択」をクリック
 
-##### 1-1-6. devブランチに切り替える
+#### 1-6. devブランチに切り替える
 
 1. IBM Bob画面左下に表示されている現在のブランチ名（「main」）をクリック
 2. 上部に表示されるブランチ一覧から「origin/dev」を選択
@@ -85,18 +85,19 @@ Forkしたリポジトリのdevブランチをローカルにクローンしま�
 1. ソース管理パネルを開く
 2. 「リポジトリを開く」をクリック
 3. 対象のリポジトリを選択
-![](/Image/preparation-and-setup/image-4.png)
+![](/Image/preparation-and-setup-with-lab3-4/image-4.png)
 
 
 
 
 
-### 3. ファイルの確認
+### 2. ファイルの確認
 
-IBM Bob画面左側のEXPLORERに「Hands-on」が表示され、以下のファイルが確認できます：
+IBM Bob画面左側のEXPLORERに「IBM-BOB-BASIC-HANDS-ON-RD2SCM-V2」が表示され、以下のファイルが確認できます：
 
-- specs> plan-template.md
-- specs> spec-template.md
+- specs
+  - plan-template.md
+  - spec-template.md
 - .bobignore
 - AGENTS.md
 - Bob.svg
@@ -138,4 +139,4 @@ IBM Bob画面左側のEXPLORERに「Hands-on」が表示され、以下のファ
 
 準備と設定が完了したら、IBM Bobの画面構成と基本操作を学びましょう！
 
-前へ: [はじめに](README.md) | 次へ: [IBM Bobの画面構成と基本操作](https://r-nakayamasan.github.io/bob-workshop-draft/02_bob_interface/)
+前へ: [はじめに](../README.md) | 次へ: [IBM Bobの画面構成と基本操作](https://r-nakayamasan.github.io/bob-workshop-draft/02_bob_interface/)
