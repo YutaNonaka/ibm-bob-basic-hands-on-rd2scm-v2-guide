@@ -4,7 +4,7 @@
 
 ## 環境準備
 
-### 1. Lab 4: ソース管理　を実施する場合
+### 1.　Lab3・4を実施する場合(Lab3・4を実施しない方は　2.　Lab3・4を実施しない場合　へ進んでください)
 
 #### 1-1. チュートリアルデータの取得
 
@@ -52,12 +52,18 @@ Forkしたリポジトリのdevブランチをローカルにクローンしま�
    - Windows/Linux: `Ctrl+Shift+P`
    - Mac: `Cmd+Shift+P`
 2. 「Git: Clone」と入力して選択する
-3. Forkしたリポジトリ（自分のアカウント）のURLを入力する
+3. 自分のGitHubに戻り、「<>Code」ボタンから、Forkしたリポジトリ（自分のアカウント）のHTTPSのURLを取得する
+3. Bobに戻り、Forkしたリポジトリ（自分のアカウント）のURLを入力する
    - 例: `https://github.com/[あなたのユーザー名]/ibm-bob-basic-hands-on-rd2scm-v2`
 4. クローン先のディレクトリを選択する
-5. クローンが完了すると、「リポジトリを開きますか？」と聞かれるので「キャンセル」をクリックする
+5. クローンが完了すると、「リポジトリを開きますか？」と聞かれるので「開く」をクリックする
 
-##### 1-1-5. プロジェクトフォルダを開く
+![](/Image/preparation-and-setup/Slide8.jpg)
+![](/Image/preparation-and-setup/Slide10.jpg)
+
+
+##### 1-1-5. 別のプロジェクトフォルダの開き方（1-1-4 手順5でフォルダを開けた方は1-1-6へ進んでください)
+
 
 ###### 1-1-5-1. フォルダーを開く
 
@@ -82,69 +88,22 @@ Forkしたリポジトリのdevブランチをローカルにクローンしま�
 3. 対象のリポジトリを選択
 ![](/Image/preparation-and-setup/image-4.png)
 
-### 2. Lab 4: ソース管理　を実施しない場合
 
-#### 2-1. チュートリアルデータの取得
 
-##### 2-1-1. GitHubリポジトリへアクセス
 
-Webブラウザを開き、リポジトリにアクセスします
-- URL: https://github.com/YutaNonaka/ibm-bob-basic-hands-on-rd2scm-v2
-
-##### 2-1-2. データのダウンロード
-
-1. 「Code」ボタンをクリックして展開
-2. 「Download ZIP」をクリック
-
-「ibm-bob-basic-hands-on-rd2scm-v2-main.zip」という名前のファイルがダウンロードされます。
-
-##### 2-1-3. ファイルの展開
-
-1. ダウンロードフォルダに移動
-2. 「ibm-bob-basic-hands-on-rd2scm-v2-main.zip」を右クリック
-3. 「すべてのファイルを展開」(Windows) または「展開」(Mac) をクリック
-
-注意: .zipファイルではなく、展開後のフォルダを使用します。
-
-##### 2-1-4. 作業ディレクトリへ移動
-
-展開後の「ibm-bob-basic-hands-on-rd2scm-v2-main」フォルダを、作業しやすい場所（デスクトップなど）にコピーします。
-
-**手順:**
-
-1. 「ibm-bob-basic-hands-on-rd2scm-v2-main」フォルダをコピー
-2. デスクトップまたは任意の作業場所にペースト
-
-#### 2-2. IBM Bobの設定
-
-##### 2-2-1. IBM Bobの起動
-
-デスクトップまたはアプリケーションフォルダから、IBM Bobを起動します。
-
-##### 2-2-2. プロジェクトフォルダを開く
-
-###### 2-2-2-1. フォルダーを開く
-
-1. IBM Bob左上の「ファイル」メニューをクリック
-2. 「フォルダーを開く」を選択
-
-###### 2-2-2-2. フォルダーを選択
-
-1. 先ほどコピーした「ibm-bob-basic-hands-on-rd2scm-v2-main」フォルダに移動
-2. フォルダをダブルクリックして中に入る
-3. 「Hands-on」フォルダを選択
-4. 「フォルダーの選択」をクリック
 
 ### 3. ファイルの確認
 
 IBM Bob画面左側のEXPLORERに「Hands-on」が表示され、以下のファイルが確認できます：
 
+- specs> plan-template.md
+- specs> spec-template.md
+- .bobignore
+- AGENTS.md
 - Bob.svg
-- qa.md
 - PROMPT.md
 - PROMPT2.md
-- AGENTS.md
-- .bobignore
+- qa.md
 
 各ファイルをクリックして内容を確認してみましょう。確認後は、タブ右上の「×」ボタンで閉じます。
 
@@ -154,12 +113,14 @@ IBM Bob画面左側のEXPLORERに「Hands-on」が表示され、以下のファ
 
 | ファイル名 | 説明 |
 |-----------|------|
-| Bob.svg | Bobのキャラクター画像。FAQサイトに挿入します |
-| qa.md | FAQ質問集（英語）。日本語に翻訳してサイトに表示します |
+| plan-template.md | 要件と仕様を定義する仕様書の雛形 |
+| spec-template.md | 具体的な作業内容を定義する実装計画書の雛形　|
+| .bobignore | Bobに確認させないファイルを指定 |
+| AGENTS.md | Bobの挙動を指定します |
+| Bob.svg | LAB2用のBobのキャラクター画像。FAQサイトに挿入します |
 | PROMPT.md | LAB1用のプロンプト集 |
 | PROMPT2.md | LAB2用のプロンプト例 |
-| AGENTS.md | Bobの挙動を指定します |
-| .bobignore | Bobに確認させないファイルを指定 |
+| qa.md| FAQ質問集（英語）。日本語に翻訳してサイトに表示します |
 
 注意: PROMPT.mdはチャット画面へコピー&ペーストして使用するため、.bobignoreに記載されています。
 
