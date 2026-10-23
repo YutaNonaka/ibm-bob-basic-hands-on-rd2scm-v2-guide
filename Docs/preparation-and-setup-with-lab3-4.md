@@ -1,16 +1,14 @@
-# 準備と設定（Lab 3・4 を実施する場合）
+# 準備と設定
 
 チュートリアルに必要なリソースを準備し、IBM Bobの基本操作を理解します。
 
-※ Lab 3・4 を実施しない場合は、[こちら](preparation-and-setup-without-lab3-4.md)を参照してください。
+※ Lab 3・4 を実施しない場合は、[こちら](preparation-and-setup-without-lab3-4.md) を参照してください。
 
 ## 環境準備
 
-### 1. Lab 3・4 を実施する場合
+#### 1. チュートリアルデータの取得
 
-#### 1-1. チュートリアルデータの取得
-
-##### 1-1-1. GitHubリポジトリのFork
+##### 1-1. GitHubリポジトリのFork
 
 既存のリポジトリを自分のGitHubアカウントにForkします。
 
@@ -54,14 +52,20 @@ Forkしたリポジトリのdevブランチをローカルにクローンしま�
    - Windows/Linux: `Ctrl+Shift+P`
    - Mac: `Cmd+Shift+P`
 2. 「Git: Clone」と入力して選択する
-3. Forkしたリポジトリ（自分のアカウント）のURLを入力する
-   - 例: `https://github.com/[あなたのユーザー名]/ibm-bob-basic-hands-on-rd2scm-v2`
+3. 自分のGitHubに戻り、「<>Code」ボタンから、Forkしたリポジトリ（自分のアカウント）のHTTPSのURLを取得する
+3. Bobに戻り、Forkしたリポジトリ（自分のアカウント）のURLを入力する
+   - 例: `https://github.com/[あなたのユーザー名]/ibm-bob-basic-hands-on-rd2scm-v2.git`
 4. クローン先のディレクトリを選択する
-5. クローンが完了すると、「リポジトリを開きますか？」と聞かれるので「キャンセル」をクリックする
+5. クローンが完了すると、「リポジトリを開きますか？」と聞かれるので「開く」をクリックする
 
-##### 1-1-5. プロジェクトフォルダを開く
+![](/Image/preparation-and-setup/Slide8.jpg)
+![](/Image/preparation-and-setup/Slide10.jpg)
 
-###### 1-1-5-1. フォルダーを開く
+
+##### 1-5. プロジェクトフォルダの別の開き方（1-1-4 手順5でフォルダを開けた方は1-6.へ進んでください)
+
+
+###### 1-5-1. フォルダーを開く
 
 1. IBM Bob画面左上の「ファイル」メニューをクリック
 2. 「フォルダーを開く」を選択
@@ -81,48 +85,49 @@ Forkしたリポジトリのdevブランチをローカルにクローンしま�
 1. ソース管理パネルを開く
 2. 「リポジトリを開く」をクリック
 3. 対象のリポジトリを選択
-![](/Image/preparation-and-setup-with-lab3-4/image-4.png)
+![](/Image/preparation-and-setup/image-4.png)
+
+
+
+
 
 ### 3. ファイルの確認
 
-IBM Bob画面左側のEXPLORERに「IBM-BOB-BASIC-HANDS-ON-RD2SCM-V2」が表示され、以下のファイル・フォルダが確認できます：
+IBM Bob画面左側のEXPLORERに「Hands-on」が表示され、以下のファイルが確認できます：
 
-- specs
-  - plan-template.md
-  - spec-template.md
+- specs> plan-template.md
+- specs> spec-template.md
 - .bobignore
 - AGENTS.md
-- bob.svg
+- Bob.svg
 - PROMPT.md
 - PROMPT2.md
 - qa.md
-- README.md
 
 各ファイルをクリックして内容を確認してみましょう。確認後は、タブ右上の「×」ボタンで閉じます。
 
 ## ファイル構成の確認
 
-プロジェクトフォルダには以下のファイル・フォルダが含まれています：
+プロジェクトフォルダには以下のファイルが含まれています：
 
 | ファイル名 | 説明 |
 |-----------|------|
-| specs/spec-template.md | 仕様書のテンプレート |
-| specs/plan-template.md | 実装計画書のテンプレート |
-| bob.svg | Bobのキャラクター画像。FAQサイトに挿入します |
-| qa.md | FAQ質問集（英語）。日本語に翻訳してサイトに表示します |
+| plan-template.md | 具体的な作業内容を定義する実装計画書の雛形 |
+| spec-template.md | 要件と仕様を定義する仕様書の雛形　|
+| .bobignore | Bobに確認させないファイルを指定 |
+| AGENTS.md | Bobの挙動を指定します |
+| Bob.svg | LAB2用のBobのキャラクター画像。FAQサイトに挿入します |
 | PROMPT.md | LAB1用のプロンプト集 |
 | PROMPT2.md | LAB2用のプロンプト例 |
-| AGENTS.md | Bobの挙動を指定します |
-| .bobignore | Bobに確認させないファイルを指定 |
-| README.md | ハンズオン用アセットのリポジトリ概要 |
+| qa.md| FAQ質問集（英語）。日本語に翻訳してサイトに表示します |
 
-注意: PROMPT.mdはチャット画面へコピー&ペーストして使用するため、.bobignoreに記載されています。
+注意: PROMPT.md、PROMPT2.mdはチャット画面へコピー&ペーストして使用するため、.bobignoreに記載されています。
 
 ## チェックリスト
 
 準備と設定が完了したら、以下を確認してください：
 
-- クローン済み
+- クローン、または、作業ディレクトリにフォルダをコピー済み
 - IBM Bobを起動済み
 - プロジェクトフォルダをBobで開いた
 - ファイル一覧を確認済み

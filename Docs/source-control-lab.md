@@ -26,7 +26,7 @@ IBM Bobのコミットメッセージ作成支援機能を使います。
 #### 手順：
 
 1. ソース管理パネルでコミットメッセージ入力欄を確認
-2. 「✨」アイコン（AI生成）をクリック
+2. 「✨」アイコン（generate commit message）をクリック
 3. Bobが差分を分析してメッセージを提案
 
 ![コミットメッセージ生成ボタン](/Image/source-control-lab/image.png)
@@ -128,6 +128,7 @@ Provides comprehensive styling for the FAQ site including:
 #### ユーザーのアクション：
 
 - 説明文を確認・編集
+- 「確認して続行」をクリック
 - 「Create pull request」をクリック
 
 ![PR作成完了画面](/Image/source-control-lab/image-3.png)
